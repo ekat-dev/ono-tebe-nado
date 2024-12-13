@@ -1,1 +1,259 @@
-/* место для вашего кода */
+body a {
+  text-underline-offset: 3px;
+}
+
+.font-sm {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.font-md {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.font-bg {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 94px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  font-size: 18px;
+  margin: 44px 42px 40px 26.52px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 34px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__links-list-item_no-bullit a {
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 136px;
+  height: 105px;
+}
+
+.address {
+  width: 237px;
+  font-size: 18px;
+  line-height: 24.3px;
+  font-style: normal;
+}
+
+.header__address {
+  margin-left: 192.86px;
+}
+
+section.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 757px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6)
+}
+
+.cover__title {
+  width: 1000px;
+  margin: 165px 50px 135px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.aligned-text {
+  color: white;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  letter-spacing: 29px;
+}
+
+.aligned-text_center {
+  width: 100%;
+  padding: 0 28.6%;
+  line-height: 100px;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+  line-height: 100px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  padding: 2px 50px 0 78px;
+  display: flex;
+  align-items: center;
+  gap: 79px;
+}
+
+.cover__description-text {
+  word-spacing: 20px;
+}
+
+.cover__description-text span {
+  word-spacing: 18px;
+}
+
+.bet-button {
+  padding: 12px 32px 11px 31px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+section.lots {
+  margin: 179px 0 155px 0;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  margin: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  position: relative;
+  min-width: 334px;
+  min-height: 563px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lots__card-list-item.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots__card-list-item.card_type_book{
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots__card-list-item.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card {
+  padding: 52px 40px 48px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.card h3 {
+  font-weight: 700;
+  line-height: 26.4px;
+  text-decoration: underline;
+}
+
+.card p {
+  color: white;
+}
+
+.lots__look-more-link {
+  display: block;
+  margin: 31px 0 0 40px;
+}
+
+section.about {
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 359px auto;
+  grid-template-rows: 275px auto;
+}
+
+.about__logo-image {
+  margin: 27px 0 0 47px;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+}
+
+.about__logo-image img {
+  width: 148px;
+  margin: auto;
+}
+
+.about__title {
+  padding-top: 26px;
+  line-height: 46.96px;
+  align-self: center;
+}
+
+.about__text {
+  grid-column-start: 2;
+  margin-right: 5px;
+  word-spacing: 1.3px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer {
+  padding: 181px 50px 121px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu-list {
+  width: 149px;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+
+.footer__social-list-item {
+  width: 48px;
+}
