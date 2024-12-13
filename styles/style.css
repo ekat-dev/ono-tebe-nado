@@ -2,19 +2,19 @@ body a {
   text-underline-offset: 3px;
 }
 
-.font-20 {
+.font-sm {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.font-22 {
+.font-md {
   font-size: 22px;
   color: white;
   text-transform: uppercase;
 }
 
-.font-40 {
+.font-bg {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -67,22 +67,16 @@ section.cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 757px;
+  min-height: 757px;
 }
 
 .overlay {
   position: absolute;
+  inset: 0;
   z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0.6;
-}
-
-.overlay__block {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
+  background: rgba(0, 0, 0, 0.6)
 }
 
 .cover__title {
@@ -104,9 +98,9 @@ section.cover {
 }
 
 .aligned-text_center {
-  align-self: center;
+  width: 100%;
+  padding: 0 28.6%;
   line-height: 100px;
-  margin-left: -59px;
 }
 
 .aligned-text_right {
@@ -144,10 +138,8 @@ section.cover {
 }
 
 section.lots {
-  margin: 179px 0 146px 0;
-  margin-top: 179px;
+  margin: 179px 0 155px 0;
   padding: 0 24px;
-  height: 700px;
 }
 
 .lots__heading {
@@ -156,36 +148,29 @@ section.lots {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
 .lots__card-list-item {
-  width: 334px;
-  height: 563px;
+  position: relative;
+  min-width: 334px;
+  min-height: 563px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .lots__card-list-item.card_type_film {
-  position: relative;
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .lots__card-list-item.card_type_book{
-  position: relative;
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .lots__card-list-item.card_type_picture {
-  position: relative;
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .card {
@@ -194,11 +179,13 @@ section.lots {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
 }
 
-.card a {
+.card h3 {
   font-weight: 700;
   line-height: 26.4px;
+  text-decoration: underline;
 }
 
 .card p {

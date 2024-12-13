@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link>
   </head>
   <body>
     <header class="header">
@@ -30,8 +29,7 @@
     </header>
     <main>
       <section class="cover">
-        <div class="overlay"></div>
-        <div class="overlay__block">
+        <div class="overlay">
           <h1 class="cover__title">
             <span class="aligned-text">
               <span>о</span><span class="letter-spacing-extended">н</span><span class="no-letter-spacing">о</span>
@@ -44,48 +42,51 @@
             </span>
           </h1>
           <div class="cover__description">
-            <p class="cover__description-text font-22">Аукцион вещей, <span>в которые никто не верил</span></p>
-            <button class="bet-button font-22">Сделать ставку</button>
+            <p class="cover__description-text font-md">Аукцион вещей, <span>в которые никто не верил</span></p>
+            <button type="button" class="bet-button font-md">Сделать ставку</button>
           </div>
         </div>
       </section>
       <section class="lots">
-        <h2 class="lots__heading font-40">Лоты</h2>
+        <h2 class="lots__heading font-bg">Лоты</h2>
         <div class="lots__card-list">
           <article class="lots__card-list-item card_type_film">
-            <div class="overlay"></div>
-            <div class="card overlay__block">
-              <a class="font-22" href="#">Фильм режиссёра, который бросил киношколу</a>
-              <p class="font-20">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            <div class="overlay">
+              <a href="#" class="card">
+                <h3 class="font-md">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="font-sm">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </a>
             </div>
           </article>
           <article class="lots__card-list-item card_type_book">
-            <div class="overlay"></div>
-            <div class="card overlay__block">
-              <a class="font-22" href="#">Книга, где описан один скучный день из жизни рекламного агента</a>
-              <p class="font-20">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            <div class="overlay">
+              <a href="#" class="card">
+                <h3 class="font-md">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="font-sm">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </a>
             </div>
           </article>
           <article class="lots__card-list-item card_type_picture">
-            <div class="overlay"></div>
-            <div class="card overlay__block">
-              <a class="font-22" href="#">Картина, которую повторит даже 5-летний сын маминой подруги</a>
-              <p class="font-20">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            <div class="overlay">
+              <a href="#" class="card">
+                <h3 class="font-md">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="font-sm">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </a>
             </div>
           </article>
         </div>
-        <a href="#" class="lots__look-more-link font-20">посмотреть больше</a>
+        <a href="#" class="lots__look-more-link font-sm">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__column about__logo-image">
-          <img src="./images/logo-white.svg">
+          <img src="./images/logo-white.svg" alt="логотип">
         </div>
         <div class="about__column about__title">
-          <h2 class="font-40">Об аукционе</h2>
+          <h2 class="font-bg">Об аукционе</h2>
         </div>
         <div class="about__column about__text">
-          <p class="font-20">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-          <p class="font-20">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+          <p class="font-sm">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="font-sm">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
         </div>
       </section>
     </main>
@@ -95,28 +96,26 @@
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
-      <nuv class="footer__menu">
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
-            <a class="footer__menu-link footer__menu-link_active">главная</a>
-          </li>
-          <li class="footer__menu-list-item">
-            <a class="footer__menu-link">посмотреть лоты</a>
-          </li>
-          <li class="footer__menu-list-item">
-            <a class="footer__menu-link">об аукционе</a>
-          </li>
-        </ul>
-      </nuv>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link footer__menu-link_active">главная</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link">об аукционе</a>
+        </li>
+      </ul>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#"><img src="./images/yt.svg" alt="youtub"></a>
+          <a class="footer__social-link" href="#" target="_blank"><img src="./images/yt.svg" alt="youtub"></a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#"><img src="./images/vk.svg" alt="vk"></a>
+          <a class="footer__social-link" href="#" target="_blank"><img src="./images/vk.svg" alt="vk"></a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#"><img src="./images/pinterest.svg" alt="pinterest"></a>
+          <a class="footer__social-link" href="#" target="_blank"><img src="./images/pinterest.svg" alt="pinterest"></a>
         </li>
       </ul>
     </footer>
